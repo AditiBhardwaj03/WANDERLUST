@@ -1,4 +1,4 @@
-# � Wanderlust
+# Wanderlust
 
 Wanderlust is a **MERN stack travel management app** that allows users to plan and organize their trips with ease.  
 You can add destinations, view all your saved trips, update trip details, and manage your travel experiences in one place.
