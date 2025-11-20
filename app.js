@@ -82,6 +82,11 @@ app.use("/", userRouter);
 app.all("/*splat", (req, res, next) => {
 	next(new ExpressError(404, "Page Not Found"));
 });
+app.use((req, res, next) => {
+  res.locals.currUser = req.user || null;
+  next();
+});
+
 
 app.use((err, req, res, next) => {
 	const { statusCode = 500, message = "Something went wrong!" } = err;
